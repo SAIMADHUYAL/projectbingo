@@ -1,0 +1,36 @@
+
+#t {
+  border-collapse: collapse;
+  width: 80%;
+}
+#t td{
+  width: 6%;
+  border: 1px solid black;
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  height: 0; }
+#t td div{ position: absolute }
+#t1 {
+  border-collapse: collapse;
+  width: 80%;
+}
+#t1 td{
+  text-align: center;
+  width: 20%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  height: 0; }
+#t1 td div { position: absolute }
+#t2 {
+  border-collapse: collapse;
+  width: 80%;
+}
+#t2 td{
+  width: 6%;
+  border: 1px solid black;
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  height: 0; }
+#t2 td div { position: absolute }
