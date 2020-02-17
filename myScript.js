@@ -30,38 +30,38 @@
 		position=sp[c];
 		sp.splice(c, 1);
 		document.getElementById("t1").rows[1].cells[1].innerHTML = position;
-		if(p1.indexOf(position)!=-1){
-			c=p1.indexOf(position);
-			i=Math.floor(c/5);
-			j=c%5;
-			p11[c]=1;
-			console.log("this is p11 "+p11);
-			document.getElementById("t").rows[i].cells[j].style.backgroundColor="#e6e600";
-		}
-		if(p2.indexOf(position)!=-1){
-			c=p2.indexOf(position);
-			i=Math.floor(c/5);
-			j=c%5;
-			document.getElementById("t2").rows[i].cells[j].style.backgroundColor="#e6e600";
-			p21[c]=1;
-			console.log(p21);
-		}
+		// if(p1.indexOf(position)!=-1){
+		// 	c=p1.indexOf(position);
+		// 	i=Math.floor(c/5);
+		// 	j=c%5;
+		// 	p11[c]=1;
+		// 	console.log("this is p11 "+p11);
+		// 	document.getElementById("t").rows[i].cells[j].style.backgroundColor="#e6e600";
+		// }
+		// if(p2.indexOf(position)!=-1){
+		// 	c=p2.indexOf(position);
+		// 	i=Math.floor(c/5);
+		// 	j=c%5;
+		// 	document.getElementById("t2").rows[i].cells[j].style.backgroundColor="#e6e600";
+		// 	p21[c]=1;
+		// 	console.log(p21);
+		// }
 
 
-    // var id;
-    // if(p1.indexOf(position)!=-1){
-    //   c=p1.indexOf(position);
-    //   id = document.getElementById("t");
-    //   p11[c] = 1;
-    // }
-    // if(p2.indexOf(position)!=-1){
-    //   c=p2.indexOf(position);
-    //   id = document.getElementById("t2");
-    //   p21[c]=1;
-    // }
-    // i=Math.floor(c/5);
-    // j=c%5;
-    // id.rows[i].cells[j].style.backgroundColor="#e6e600";
+    var id;
+    if(p1.indexOf(position)!=-1){
+      c=p1.indexOf(position);
+      id = document.getElementById("t");
+      p11[c] = 1;
+    }
+    if(p2.indexOf(position)!=-1){
+      c=p2.indexOf(position);
+      id = document.getElementById("t2");
+      p21[c]=1;
+    }
+    i=Math.floor(c/5);
+    j=c%5;
+    id.rows[i].cells[j].style.backgroundColor="#e6e600";
 
 	}
 
