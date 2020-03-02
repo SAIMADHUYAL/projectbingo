@@ -6,69 +6,50 @@
 
 </head>
 <body>
-<table align="center" id="t1">
-<tr>
-  <th id="heading">PLAYER-1</th>
-  <th>
-    <button onClick="history.go(0)">RESTART</button>
-  </th>
-  <th id = "heading">PLAYER-2</th>
-</tr>
-<tr>
+  <h2 align="center">BINGO</h2>
+  <table align="center" id="t1">
+  <tr>
+  <th id="heading">PLAYER-1</th><th><button onClick="history.go(0)">RESTART</button></th><th id="heading">PLAYER-2</th></tr>
+  <tr><td>
+  <table align="center" id="t">
+  <tr>
+    <td onclick="myFunction3(0,0,0)">1</td><td onclick="myFunction3(0,0,1)">1</td>
+    <td onclick="myFunction3(0,0,2)">1</td><td onclick="myFunction3(0,0,3)">1</td>
+    <td onclick="myFunction3(0,0,4)">1</td>
+  </tr>
+  <tr>
+    <td onclick="myFunction3(0,1,0)">1</td>
+    <td onclick="myFunction3(0,1,1)">1</td>
+    <td onclick="myFunction3(0,1,2)">1</td>
+    <td onclick="myFunction3(0,1,3)">1</td>
+    <td onclick="myFunction3(0,1,4)">1</td>
+  </tr>
+  <tr>
+    <td onclick="myFunction3(0,2,0)">1</td>
+    <td onclick="myFunction3(0,2,1)">1</td>
+    <td onclick="myFunction3(0,2,2)">1</td>
+    <td onclick="myFunction3(0,2,3)">1</td>
+    <td onclick="myFunction3(0,2,4)">1</td>
+  </tr>
+  <tr><td onclick="myFunction3(0,3,0)">1</td><td onclick="myFunction3(0,3,1)">1</td><td onclick="myFunction3(0,3,2)">1</td><td onclick="myFunction3(0,3,3)">1</td><td onclick="myFunction3(0,3,4)">1</td></tr>
+  <tr><td onclick="myFunction3(0,4,0)">1</td><td onclick="myFunction3(0,4,1)">1</td><td onclick="myFunction3(0,4,2)">1</td><td onclick="myFunction3(0,4,3)">1</td><td onclick="myFunction3(0,4,4)">1</td></tr>
+  </table>
+  </td>
   <td>
-<table align="center" id="t">
-<tr>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-</tr>
-<tr>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-</tr>
-<tr>
-  <td>1</td>
-  <td>1</td>
-  <td>1</td>
-  <td>1</td>
-  <td>1</td>
-</tr>
-<tr>
-  <td>1</td>
-  <td>1</td>
-  <td>1</td>
-  <td>1</td>
-  <td>1</td>
-</tr>
-<tr>
-  <td>1</td>
-  <td>1</td>
-  <td>1</td>
-  <td>1</td>
-  <td>1</td>
-</tr>
-</table>
-</td>
-<td>
-</td>
-<td>
-<table align="center" id="t2">
-  <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-  <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-  <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-  <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-  <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-</table>
-</td></tr>
-<tr><td><button id="b1" onclick="myShuffleFunction(this.id)">SHUFFEL</button></td><td>
-<button id="spin" onclick="mySpinFunction()">START</button>
-</td><td><button id="b2" onclick="myShuffleFunction(this.id)">SHUFFEL</button></td></tr>
-</table>
+  </td>
+  <td>
+  <table align="center" id="t2">
+  <tr><td onclick="myFunction3(1,0,0)">1</td><td onclick="myFunction3(1,0,1)">1</td><td onclick="myFunction3(1,0,2)">1</td><td onclick="myFunction3(1,0,3)">1</td><td onclick="myFunction3(1,0,4)">1</td></tr>
+  <tr><td onclick="myFunction3(1,1,0)">1</td><td onclick="myFunction3(1,1,1)">1</td><td onclick="myFunction3(1,1,2)">1</td><td onclick="myFunction3(1,1,3)">1</td><td onclick="myFunction3(1,1,4)">1</td></tr>
+  <tr><td onclick="myFunction3(1,2,0)">1</td><td onclick="myFunction3(1,2,1)">1</td><td onclick="myFunction3(1,2,2)">1</td><td onclick="myFunction3(1,2,3)">1</td><td onclick="myFunction3(1,2,4)">1</td></tr>
+  <tr><td onclick="myFunction3(1,3,0)">1</td><td onclick="myFunction3(1,3,1)">1</td><td onclick="myFunction3(1,3,2)">1</td><td onclick="myFunction3(1,3,3)">1</td><td onclick="myFunction3(1,3,4)">1</td></tr>
+  <tr><td onclick="myFunction3(1,4,0)">1</td><td onclick="myFunction3(1,4,1)">1</td><td onclick="myFunction3(1,4,2)">1</td><td onclick="myFunction3(1,4,3)">1</td><td onclick="myFunction3(1,4,4)">1</td></tr>
+  </table>
+  </td></tr>
+  <tr><td><button id="b1" onclick="myFunction1(this.id)">SHUFFLE</button></td><td>
+  <button id="spin" onclick="myFunction2()">START</button>
+</td><td><button id="b2" onclick="myFunction1(this.id)">SHUFFLE</button></td></tr>
+  </table>
 <script type="text/javascript" src="myScript.js">
 </script>
 
