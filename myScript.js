@@ -31,13 +31,18 @@ function myFunction2() {
       sp.push(ranNumber);
     }//remove %25 and replace 50 with 25
     console.log(sp);
-    time  = setInterval ( "myFunction2()", 20000 );
+    //time  = setInterval ( "myFunction2()", 5000 );
   }
   if(spin==1){
     c=Math.floor(Math.random() * ((sp.length)-1)) ;
     t=sp[c];
     sp.splice(c, 1);
-    document.getElementById("t1").rows[1].cells[1].innerHTML = t;
+    if(sp.length !=0){
+      document.getElementById("t1").rows[1].cells[1].innerHTML = t;
+    }
+    else{
+      document.getElementById("t1").rows[1].cells[1].innerHTML ="Game is Draw Click on Restart if you want play again!";
+    }
   }
 }
 
@@ -133,6 +138,8 @@ function myFunction3(p,i,j) {
     if(p1c>=5){
       spin=2;
       document.getElementById("t").innerHTML="BINGO";
+      document.getElementById("t1").rows[1].cells[1].innerHTML = "Player 1 Won the Game";
+      document.getElementById("t1").style.color= "#2eb82e";
       document.getElementById("t").style.color="#2eb82e";
       document.getElementById("t").style.fontSize="300%";
       clearInterval ( time );
@@ -140,6 +147,8 @@ function myFunction3(p,i,j) {
     if(p2c>=5){
       spin=2;
       document.getElementById("t2").innerHTML="BINGO";
+      document.getElementById("t1").style.color= "#2eb82e";
+      document.getElementById("t1").rows[1].cells[1].innerHTML = "Player 2 Won the Game";
       document.getElementById("t2").style.color="#2eb82e";
       document.getElementById("t2").style.fontSize="300%";
       clearInterval ( time );
