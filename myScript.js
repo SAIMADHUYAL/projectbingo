@@ -139,7 +139,7 @@ function myFunction3(p,i,j) {
       spin=2;
       document.getElementById("t").innerHTML="BINGO";
       document.getElementById("t1").rows[1].cells[1].innerHTML = "Player 1 Won the Game";
-      document.getElementById("t1").style.color= "#2eb82e";
+    //  document.getElementById("t1").style.color= "#2eb82e";
       document.getElementById("t").style.color="#2eb82e";
       document.getElementById("t").style.fontSize="300%";
       clearInterval ( time );
@@ -147,7 +147,7 @@ function myFunction3(p,i,j) {
     if(p2c>=5){
       spin=2;
       document.getElementById("t2").innerHTML="BINGO";
-      document.getElementById("t1").style.color= "#2eb82e";
+      //document.getElementById("t1").style.color= "#2eb82e";
       document.getElementById("t1").rows[1].cells[1].innerHTML = "Player 2 Won the Game";
       document.getElementById("t2").style.color="#2eb82e";
       document.getElementById("t2").style.fontSize="300%";
