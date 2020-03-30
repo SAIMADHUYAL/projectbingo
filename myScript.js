@@ -156,42 +156,6 @@ function myFunction3(p,i,j) {
   }
 }
 
-// function myFunction(object) {
-//   sp=[];
-//   for(i=0;i<25;i++){
-//     sp.push(i+1);
-//   }
-//   console.log(object);
-//   i=0;
-//   // if(object == "b1"){
-//   //   var id = document.getElementById("t");
-//   // }
-//   // if(object == "b2"){
-//   //   var id = document.getElementById("t2");
-//   // }
-//   while(i<25){
-//     c=Math.floor(Math.random() * ((sp.length)-1)) ;
-//     t=sp[c];
-//     sp.splice(c, 1);
-//     p1[i]=t;
-//     i++;
-//   }
-//   for (i=0; i < 5; i++){
-//     for (j=0; j < 5; j++){
-//       t=(i*5)+j;
-//       document.getElementById("t").rows[i].cells[j].innerHTML = p1[t];
-//     }
-//   }
-//   // if(object == "b1"){
-//   //   p1=p;
-//   // }
-//   // if(object == "b2"){
-//   //   p2=p;
-//   // }
-//   // p=[];
-//   console.log(p1);
-//   console.log(p2);
-// }
   function myFunction1(object) {
     sp=[];
     for(i=1;i<=25;i++){
