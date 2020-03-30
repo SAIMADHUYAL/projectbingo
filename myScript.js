@@ -31,7 +31,7 @@ function myFunction2() {
       sp.push(ranNumber);
     }//remove %25 and replace 50 with 25
     console.log(sp);
-    //time  = setInterval ( "myFunction2()", 5000 );
+    time  = setInterval ( "myFunction2()", 5000 );
   }
   if(spin==1){
     c=Math.floor(Math.random() * ((sp.length)-1)) ;
