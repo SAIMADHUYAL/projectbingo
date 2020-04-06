@@ -64,3 +64,7 @@ button:hover{
   padding-top: 3%;
   height: 0; }
 #t2 td div { position: absolute }
+#countdown{
+  
+  color: red;
+}

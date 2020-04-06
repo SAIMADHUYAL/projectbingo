@@ -17,8 +17,18 @@ var time;
 myFunction1("b1");
 myFunction1("b2");
 
+function UpdateTimer(seconds){
+  //var seconds = 8;
+  var countdown = setInterval(function() {
+    seconds--;
+    document.getElementById("countdown").textContent = seconds;
+    if (seconds <= 0) clearInterval(countdown);
+  }, 1000);
+}
 
 function myFunction2() {
+
+  UpdateTimer(8);
   if(spin==0){
     spin=1;
     document.getElementById("b1").style.display="none";
@@ -31,7 +41,7 @@ function myFunction2() {
       sp.push(ranNumber);
     }//remove %25 and replace 50 with 25
     console.log(sp);
-    time  = setInterval ( "myFunction2()", 5000 );
+    time  = setInterval ( "myFunction2()", 8000 );
   }
   if(spin==1){
     c=Math.floor(Math.random() * ((sp.length)-1)) ;
