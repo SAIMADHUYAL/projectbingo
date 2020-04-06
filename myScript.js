@@ -33,8 +33,9 @@ function myFunction2() {
     spin=1;
     document.getElementById("b1").style.display="none";
     document.getElementById("b2").style.display="none";
-    document.getElementById("spin").innerHTML="SPIN";
+    //document.getElementById("spin").innerHTML="SPIN";
     //document.getElementById("spin").style.display="none";
+    document.getElementById("spin").style.display="none";
     sp=[];
     for(i=0;i<=49;i++){
       var ranNumber = (i%25)+1;
@@ -51,7 +52,8 @@ function myFunction2() {
       document.getElementById("t1").rows[1].cells[1].innerHTML = t;
     }
     else{
-      document.getElementById("t1").rows[1].cells[1].innerHTML ="Game is Draw Click on Restart if you want play again!";
+      document.getElementById("t1").rows[1].cells[1].innerHTML ="Game is Draw Click Restart if you want play again!";
+      document.getElementById("countdown").style.display="none";
     }
   }
 }
@@ -149,6 +151,7 @@ function myFunction3(p,i,j) {
       spin=2;
       document.getElementById("t").innerHTML="BINGO";
       document.getElementById("t1").rows[1].cells[1].innerHTML = "Player 1 Won the Game";
+      document.getElementById("countdown").style.display="none";
     //  document.getElementById("t1").style.color= "#2eb82e";
       document.getElementById("t").style.color="#2eb82e";
       document.getElementById("t").style.fontSize="300%";
@@ -159,6 +162,7 @@ function myFunction3(p,i,j) {
       document.getElementById("t2").innerHTML="BINGO";
       //document.getElementById("t1").style.color= "#2eb82e";
       document.getElementById("t1").rows[1].cells[1].innerHTML = "Player 2 Won the Game";
+      document.getElementById("countdown").style.display="none";
       document.getElementById("t2").style.color="#2eb82e";
       document.getElementById("t2").style.fontSize="300%";
       clearInterval ( time );
